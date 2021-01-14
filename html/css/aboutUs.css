@@ -1,0 +1,265 @@
+body{
+    overflow: scroll;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+html,body{
+    margin: 0px;
+    height: 100%;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+/* 头部 */
+#header{
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    position: -webkit-sticky;
+
+}
+
+.nav{
+    /* width: 100%; */
+    width: 1200px;
+    height: 93px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  
+
+}
+.logo{
+   
+}
+
+.logo>img{
+    width: 100%;
+}
+
+.nav .nav_nav>a{
+    margin: 0 20px;
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 28px;
+}
+
+.nav .nav_nav a:hover{
+    color: #FFBC3D;
+    border-bottom: 2px solid #FFBC3D;
+}
+
+.nav .nav_nav a:last-child{
+    color: #FFBC3D;
+    border-bottom: 2px solid #FFBC3D;
+}
+
+/* 内容区 */
+
+#content{
+    position: relative;
+}
+.content_right_btn{
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    z-index: 15;
+    /* height: 930px; */
+    width: 50px;
+    /* background: sienna; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+.content_right_btn .content_right_btn1{
+    width: 8px;
+    height: 30px;
+    border-radius: 10px;
+    background: #ffffff;
+}
+
+.content_right_btn .content_right_btn2{
+    margin-top:6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    background: #cccccc;;
+}
+
+.content_1{
+    width: 100%;
+    height: 100%;
+    background:url(../img/home2.png) no-repeat center ; 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ .content_1_top{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+    
+     width: 100%;
+   
+} 
+
+
+
+.content_1_top>h1{
+    font-size: 48px;
+    color:#FFBC3D;
+} 
+
+.content_1_top_text{
+    margin-top: 22px;
+    height: 109px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+
+
+.content_btm{
+    /* height: 430px; */
+    /* background: saddlebrown; */
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.rotationChart{
+    width: 1200px;
+    height: 420px;
+   
+
+}
+
+.btn_left{
+    float: left;
+    height: 420px;
+    line-height: 420px;
+}
+
+.btn_right{
+    float: right;
+    height: 420px;
+    line-height: 420px;
+}
+
+.btn_left>img,.btn_right>img{
+    width: 70%;
+}
+
+
+
+
+/* 轮播图--开始 */
+
+.bannerBox{
+ 
+    width: 1600px;
+}
+
+.bannerBox .banner{
+    width: 100%;
+    /* height: 500px;  */
+    height:360px; 
+    max-width:1600px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    /* margin-top: 100px */
+}
+.bannerBox .banner ul{
+    overflow: hidden;
+    position: absolute;
+    width: 1200px;
+
+    /* height: 500px; */
+    height: 360px;
+    left: 50%;
+    margin-left: -600px;
+}
+.bannerBox .banner li {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    transform: scale(0.85);
+    transition: transform 0.4s;
+}
+.bannerBox .banner li a{
+    display: block;
+    width: 1200px;
+ 
+    height: 100%;
+}
+.bannerBox .banner li.on{
+    transform: scale(1);
+}
+.banner-btn{
+    /* width: 100%; */
+    position: absolute;
+    width: 1200px;
+    /* height:500px; */
+    height:360px;
+    top: 40px;
+    left: 50%;
+    margin-left: -600px;
+    z-index: 9;}
+.banner-btn-prev,.banner-btn-next{
+    display: block;
+    width: 200px;
+    height: 425px;
+    position: absolute;
+}
+.banner-btn-prev{
+    left: -65px;
+    line-height:274px;
+
+
+}
+.banner-btn-next{
+    right: -215px;
+    line-height:274px;
+
+}
+
+
+/* 轮播图 -结束*/
+
+
+.content_2{
+    display: none;
+    /* height: 930px; */
+    height: 100%;
+    width: 100%;
+    /* background-image:url("../img/home2.png"); */
+    background:url(../img/home2.png) no-repeat center ; 
+    text-align: center;
+    /* padding-top: 309px; */
+    position: relative;
+}
+
+.content_2Btn{
+    margin-top: 6px;
+}
+.content_2_text{
+   
+
+}

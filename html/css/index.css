@@ -1,0 +1,153 @@
+body{
+    overflow: scroll;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+html,body{
+    margin: 0px;
+    height: 100%;
+    font-size: 12px;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+/* 头部 */
+#header{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    position: -webkit-sticky;
+}
+.nav{
+    width: 1200px;
+    height: 93px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 auto;
+}
+.logo{
+  
+}
+
+.logo>img{
+    width: 100%;
+}
+
+.nav .nav_nav>a{
+    margin: 0 20px;
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 28px;
+}
+
+.nav .nav_nav a:hover{
+    color: #FFBC3D;
+    border-bottom: 2px solid #FFBC3D;
+}
+
+.nav .nav_nav a:first-child{
+    color: #FFBC3D;
+    border-bottom: 2px solid #FFBC3D;
+}
+
+/* 内容区 */
+#content{
+    width: 100%;
+    margin: 0 auto;
+}
+
+#content::after{
+    content: '';
+    display: block;
+    height: 0px;
+    clear: both;
+    visibility: hidden;
+}
+
+.content_1{
+    width: 100%;
+    height: 100%;
+    background:url(../img/homebg4.png) no-repeat center ; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.conten_img_1{
+    width: 986px;
+    height: 458px;
+}
+.conten_img_1>img{
+    width: 100%;
+}
+.nextPage{
+    position: absolute;
+    bottom: 30px;
+    z-index: 3;
+}
+
+/* 右边提示 */
+.content_right_btn{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 15;
+    height: 930px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+.content_right_btn .content_right_btn1{
+    width: 8px;
+    height: 30px;
+    border-radius: 10px;
+    background: #ffffff;
+}
+
+.content_right_btn .content_right_btn2{
+    margin-top:6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    background: #cccccc;;
+}
+.content_2Btn{
+    margin-top: 6px;
+}
+
+/* /////////// */
+
+
+.content_2{
+    width: 100%;
+    height: 100%;
+    background:url(../img/bg.png) no-repeat center ; 
+    display: none;
+}
+
+.conten_img_2{
+    /* margin-top: 245px; */
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+.conten_img_2>div>img{
+    width: 100%;
+}
+
+
+.conten_img_2>div>img:hover{
+    transform: scale(1.05);
+    transition: transform linear .15s;
+}
+
+/* 底部 */
